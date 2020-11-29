@@ -1,0 +1,25 @@
+{
+    "name": "sxqibo/fast-sms",
+    "description": "大汉三通发送短信的类库",
+    "keywords": [
+        "大汉三通",
+        "短信"
+      ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sxqibo",
+            "email": "hongweizhiyuan@qq.com"
+        }
+    ],
+    "require": {
+        "ext-json" : "*",
+        "ext-curl" : "*"
+    },
+    "autoload": {
+        "files": [],
+        "psr-4": {
+            "Sxqibo\\Sms\\": "src/"
+        }
+    }
+}
