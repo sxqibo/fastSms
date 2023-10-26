@@ -25,7 +25,6 @@ final class SmsForAliyunNew implements SmsInterface
                 'accessKeyId' => $this->config['access_key'],
                 'accessKeySecret' => $this->config['access_secret']
             ]);
-            $tmpConfig->endpoint($this->config['host']);
 
             $this->sms = new Dysmsapi($tmpConfig);
         }
