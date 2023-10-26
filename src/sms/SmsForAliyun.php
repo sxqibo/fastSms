@@ -45,7 +45,7 @@ final class SmsForAliyun implements SmsInterface
                     'PhoneNumbers' => $phone,
                     'SignName' => $this->config['sign_name'],
                     'TemplateCode' => $conf['template_id'],
-                    'TemplateParam' => json_encode($arguments),
+                    'TemplateParam' => json_encode($arguments, JSON_UNESCAPED_UNICODE),
                 ],
             ])
             ->request();
