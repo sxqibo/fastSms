@@ -38,7 +38,7 @@ final class SmsForDahan implements SmsInterface
             'account'   => $this->config['account'],       // 参数1：用户账号
             'password'  => $this->config['password'],      // 参数2：账号密码，需采用MD5加密(32位小写)；
             'phones'    => $phone,                         // 参数3：接收手机号码，多个手机号码用英文逗号分隔，最多500个，必填；
-            'content'   => $arguments,                     // 参数4：短信内容，最多350个汉字，必填,内容中不要出现【】[]这两种方括号，该字符为签名专用；
+            'content'   => $arguments[0],                  // 参数4：短信内容，最多350个汉字，必填,内容中不要出现【】[]这两种方括号，该字符为签名专用；
             'sign'      => $this->config['sign'],          // 参数5：短信签名，该签名需要提前报备，生效后方可使用，不可修改，必填，示例如：【大汉三通】；
             'sendtime'  => date('YmdHm', time()),          // 参数6：定时发送时间，格式yyyyMMddHHmm，为空或早于当前时间则立即发送；
             'msgid'     => $this->config['msgid'],         // 该批短信编号(32位UUID)，需保证唯一，选填
