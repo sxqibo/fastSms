@@ -16,7 +16,7 @@
         "php": ">=7.4",
         "ext-json" : "*",
         "ext-curl" : "*",
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "7.8.0",
         "alibabacloud/client": "^1.5.32",
         "qiniu/php-sdk": "^7.2",
         "qcloudsms/qcloudsms_php": "0.1.*",
