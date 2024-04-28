@@ -61,7 +61,7 @@ final class SmsSend
 
 $smsSend = new SmsSend();
 // 有模版的
-$data = $smsSend->sendSms('15034406371', 'smsVerify', ['code' => '123456']);
+$data = $smsSend->sendSms('', 'smsVerify', ['code' => '123456']);
 // 没模版的，大汉三通没有模板
-$data = $smsSend->sendSms('15034406371', '', ['123456']);
+$data = $smsSend->sendSms('', '', ['123456']);
 var_dump($data);
