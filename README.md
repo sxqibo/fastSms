@@ -33,6 +33,7 @@ PHP7.4+
 5. 又拍云 ucloud
 6. 华为云 huawei
 7. 优刻得 upyun
+8. 梦网云 mont
 
 #### 例子
 
